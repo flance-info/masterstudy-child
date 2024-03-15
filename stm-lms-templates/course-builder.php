@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 wp_register_style( 'ms-lms-course-builder', MS_LMS_URL . 'assets/course-builder/css/main.css', null, MS_LMS_VERSION );
-wp_register_script( 'ms-lms-course-builder', get_stylesheet_directory_uri() . '/assets/js/course-builder/main.js', null, MS_LMS_VERSION, true );
+wp_register_script( 'ms-lms-course-builder', get_stylesheet_directory_uri() . '/assets/course-builder/js/main.js', null, MS_LMS_VERSION, true );
 wp_set_script_translations( 'ms-lms-course-builder', 'masterstudy-lms-learning-management-system', MS_LMS_PATH . '/languages' );
 
 $scripts = wp_scripts();
