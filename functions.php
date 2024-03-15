@@ -1,13 +1,12 @@
 <?php 
-	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-	function theme_enqueue_styles() {
 
-		wp_enqueue_style( 'theme-style', get_stylesheet_uri(), null, STM_THEME_VERSION, 'all' );
+/**
+ * Enqueue styles and scripts
+ */ 
+//require_once $inc_path.'/enqueue-styles-scripts.php';
+require_once dirname( __FILE__ ).'/inc/enqueue-styles-scripts.php';
 
-		
-	}
-
-    add_action( 'save_post_stm-courses', function ( $post_id ) {
-        update_post_meta( $post_id, 'course_certificate', '' );
-        update_post_meta( $post_id, 'current_students', '' );
-    });
+/**
+ * Action and filters hooks
+ */ 
+require_once dirname( __FILE__ ).'/inc/action-filters.php';
