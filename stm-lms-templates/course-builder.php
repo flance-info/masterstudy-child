@@ -50,7 +50,6 @@ foreach ( $load_scripts as $handle ) {
 	}
 </script>
 <?php
-echo 'childtheme';
 $scripts->print_translations( 'ms-lms-course-builder' );
 
 if ( ! class_exists( '\_WP_Editors', false ) ) {
